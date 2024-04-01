@@ -337,6 +337,8 @@ form input, form textarea{
     padding: 20px;
     font-size: 36px;
     letter-spacing: normal;
+    margin-bottom: 60px;
+    height: 5vh;
    
    
  }
@@ -347,7 +349,7 @@ form input, form textarea{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 95vh;
+    height: 90%;
  
  }
  
@@ -427,14 +429,12 @@ form input, form textarea{
 } /*  ---- FIM: ESTILO FOOTER*/
 
 
+
 /* RESPONSIVIDADE DO TITILO DO FORMULÁRIO*/
 
-@media screen and (max-width: 600px) and (min-width: 400px){
-
-    .titulo-contato{
+@media screen and (max-width: 480px) and (min-width: 375px),
+       screen and (max-height: 800px) and (min-height: 667px) {
+    .titulo-contato {
         font-size: 16px;
-    
     }
-     
-   
 }
