@@ -425,3 +425,16 @@ form input, form textarea{
     font-size: 36px;
    
 } /*  ---- FIM: ESTILO FOOTER*/
+
+
+/* RESPONSIVIDADE DO TITILO DO FORMULÁRIO*/
+
+@media screen and (max-width: 600px) and (min-width: 400px){
+
+    .titulo-contato{
+        font-size: 16px;
+    
+    }
+     
+   
+}
