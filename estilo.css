@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*FORMATAÇÃO GERAL DA PÁGINA*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html{
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F5F5F5;
+    font-size: 16px;
+}
+
+span{
+    color: blueviolet;
+}
+
+h1{
+    letter-spacing: 0.3rem;
+}
+
+h2{
+    line-height: 24px;
+}
+a{
+    text-decoration: none;
+}
+
+/* INICIO: HEADER --- ESTILO DO CABEÇALHO UNIVERSAL*/
+
+.logo{
+    font-size: 26px;
+}
+
+.container-cabecalho{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+  }
+
+
+.container-cabecalho .componente-lista {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    
+}
+
+.container-cabecalho a{
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+
+}
+
+.container-cabecalho a:hover{
+    color: blueviolet;
+    
+
+} /* FIM: HEADER --- ESTILO DO CABEÇALHO UNIVERSAL*/
+
+
+
+/* INICIO: ESTILO DO MAIN ---- CONTEUDO PAG SOBRE MIM*/
+
+.conteudo-principal{
+    display: flex;
+    gap: 36px;
+    margin: 15%;
+    padding: 24px;
+    height: 75%;
+    width: 75%;
+    margin-top: 120px;
+    
+}
+
+.descricao{
+    flex-wrap: wrap;
+    text-align: justify;
+    width: 75%;
+    border-left: 1px solid blueviolet;
+    padding-left: 20px;
+   
+   
+}
+
+ .img-profile{
+    height: 50vh;
+    
+}
+
+.btns{
+    margin-top: 26px;
+}
+
+.btns button {
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;  
+
+}
+
+.btn-contato {
+    color: white;
+    
+}
+
+button.btn-contato{
+    background-color:black;
+    border: none;
+}
+
+.btn-contato:hover{
+    background-color: blueviolet;
+ 
+}
+
+
+.btn-portfolio a{
+    color:blueviolet;
+   
+}
+
+.btn-portfolio{
+    border: 1px solid black;
+    
+}
+
+.btn-portfolio:hover{
+    background-color:black;
+    border: none;
+    color: blueviolet;
+   
+  } /* ----- FIM: ESTILO DO MAIN ---- CONTEUDO PAG SOBRE MIM */
+
+ 
+
+/* ---- INICIO: ESTILO PÁGINA FORMACAO*/
+
+ul.f-educacional, ul.cursos, ul.idiomas,.xp-profissional{
+    list-style-type: square;
+}
+
+.conteudo-formacao h1{
+    margin-top: 20px;
+}
+
+ .conteudo-formacao{
+    margin: 30px;
+    font-size: 1.2rem;
+    padding: 36px;
+    border-bottom: 1px solid blueviolet;
+ }
+ 
+
+ .img-formacao{
+    float: right;
+    margin-top: 60px;
+    margin-left: 30px;
+    height: 36vh;
+ }
+ 
+ 
+ .lista-linguagem{
+    margin-left: 40px;
+ }
+ 
+ .lista-linguagem{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 20px;
+    list-style-type: none;
+ }
+ 
+
+ .linguagem{
+    margin: 42px;
+    
+ }
+
+
+ .img-linguagem{
+    width: 100px;
+    height: 100px;
+    margin: 12px;
+ 
+} /* ---- FIM: ESTILO PÁGINA FORMACAO*/
+ 
+
+
+
+/* ---- INICIO: ESTILO PÁGINA PORTFOLIO*/
+
+section .container-port h1{
+    text-align: center;
+    font-size: 2.5rem;
+    
+    
+}
+
+section .container-port p{
+    font-size: 1.2rem;
+    text-align: center;
+  
+}
+
+section.portfolio{
+    padding: 80px 4%;
+
+}
+
+.alinha-port{
+    display: flex;
+}
+
+/*ajuste do espaçamento e posicionamento das divs da section*/
+section.portfolio .alinha-port{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+    
+}
+
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% top;
+    cursor: pointer;
+    border-radius: 40px;
+    border: none;
+    position: relative;
+}
+
+
+.img-port:hover{
+    border: 2px solid blueviolet;
+}
+
+.over-div{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(70, 23, 113, 0.714);
+border-radius: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+font-weight: 600;
+color: white;
+opacity: 0;
+transition: .5s;
+
+}
+
+.over-div:hover{
+    opacity: 1;
+
+} /* ---- FIM: ESTILO PÁGINA PORTFOLIO*/
+
+
+
+
+/*  ---- INICIO: ESTILO FORMULÁRIO PÁGINA CONTATO*/
+ 
+form{
+    margin-top: 10px;
+   
+}
+
+form input, form textarea{
+    outline: unset;
+    padding: 20px;
+    min-width: 450px;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 10px;
+    font-size: 16px;
+   
+   
+ }
+    /* Efeito de foco nos input*/
+ form input:focus, form textarea:focus{
+    background-color: rgba(248, 241, 241, 0.79);
+ }
+ 
+ label{
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: 300;
+ }
+ 
+ /*Caixa em volta do formulário com ajustes para cobrir os inputs*/
+ fieldset{
+    padding: 30px;
+    margin-bottom: 36px;
+    background-color: rgba(26, 75, 70, 0.073);
+    border: none;
+    border-radius: 20px;
+    min-width: 500px;    
+    
+ }
+ 
+ form input[type=submit]{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ 
+ form input[type=reset]{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ 
+ 
+    .titulo-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 36px;
+    letter-spacing: normal;
+   
+   
+ }
+
+ 
+ /* Alinhando o formulario no centro nos dois eixos com flebox*/
+ .formulario-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+ 
+ }
+ 
+ /*Ajustando os inputs do formulário para ficar um embaixo do outro*/
+   .input-padrao{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 35vw;
+  
+ }
+ 
+ /*Efeitos hover nos botões enviar e limpar*/
+ 
+ form input[type=reset]:hover{
+    border: 1px solid red;
+    color: red;
+    
+ }
+ 
+ form input[type=submit]:hover{
+    border: 1px solid white;
+ 
+    
+ } /*  ---- FIM: ESTILO FORMULÁRIO PÁGINA CONTATO*/
+
+
+
+
+
+
+/* ---- INICIO: ESTILO FOOTER*/
+
+.rodape{
+    text-align: center;
+    padding: 20px;
+    height: 30vh;
+    background-color: black;
+    
+
+}
+    
+
+.rodape a{
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+   
+    
+}
+
+
+.paragrafo-footer{
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+   
+}
+
+.paragrafo-sec-footer{
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.componente-lista-footer{
+    display: flex;
+    justify-content: center;  
+    padding: 30px;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 36px;
+   
+} /*  ---- FIM: ESTILO FOOTER*/
